@@ -12,6 +12,7 @@
     "docker-build-local": "create-docker-context-for-node-component --build --push --tag auto --local",
     "docker-build-prod": "create-docker-context-for-node-component --build --push --tag auto",
     "test": "mocha --require ts-node/register --require tsconfig-paths/register \"src/test/**/*.spec.ts\"",
+    "helm-lint": "helm lint deploy/magda-minion-format -f deploy/test-deploy.yaml",
     "retag-and-push": "retag-and-push"
   },
   "author": "",
@@ -57,7 +58,7 @@
     "registryUrl": "http://localhost:6101/v0",
     "docker": {
       "name": "data61/magda-minion-format",
-      "include": "node_modules dist Dockerfile synonyms.json"
+      "include": "node_modules dist Dockerfile synonyms.json package.json"
     },
     "jwtSecret": "squirrel",
     "userId": "00000000-0000-4000-8000-000000000000"
