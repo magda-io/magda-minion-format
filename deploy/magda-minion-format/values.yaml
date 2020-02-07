@@ -3,14 +3,14 @@ global:
   rollingUpdate: {}
 
 image: 
-  name: "data61/magda-minion-format"
+  name: "magda-minion-format"
   # repository: 
   # tag: 
   # pullPolicy: 
   # imagePullSecret: 
 
 defaultImage:
-  repository: docker.io
+  repository: docker.io/data61
   tag: 0.0.57-0
   pullPolicy: IfNotPresent
   # imagePullSecret: ""
