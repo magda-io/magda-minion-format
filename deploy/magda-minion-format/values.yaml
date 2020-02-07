@@ -1,0 +1,17 @@
+global:
+  image: {}
+  rollingUpdate: {}
+
+image: 
+  name: "data61/magda-minion-format"
+  repository: docker.io
+  tag: 0.0.57-0
+  pullPolicy: IfNotPresent
+  # imagePullSecret: ""
+
+resources:
+  requests:
+    cpu: 10m
+    memory: 30Mi
+  limits:
+    cpu: 100m
