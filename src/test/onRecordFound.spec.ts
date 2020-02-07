@@ -28,7 +28,7 @@ import soilRiskMap1 from "./sampleDataFiles/soil-risk-map-1.json";
 
 import soilRiskMap2 from "./sampleDataFiles/soil-risk-map-2.json";
 
-import Registry from "magda-typescript-common/src/registry/AuthorizedRegistryClient";
+import { AuthorizedRegistryClient as Registry } from "@magda/minion-sdk";
 
 describe("onRecordFound", function(this: Mocha.ISuiteCallbackContext) {
     async function testDistReturnsFormat(

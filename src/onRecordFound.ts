@@ -1,6 +1,8 @@
-import Registry from "magda-typescript-common/src/registry/AuthorizedRegistryClient";
-import { Record } from "magda-typescript-common/src/generated/registry/api";
-import unionToThrowable from "magda-typescript-common/src/util/unionToThrowable";
+import {
+    AuthorizedRegistryClient as Registry,
+    Record
+} from "@magda/minion-sdk";
+import { unionToThrowable } from "@magda/utils";
 
 import { FormatAspect } from "./formatAspectDef";
 
