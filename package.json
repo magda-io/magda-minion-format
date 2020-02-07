@@ -40,7 +40,7 @@
     "typescript": "^3.7.2"
   },
   "dependencies": {
-    "@magda/connector-sdk": "^0.0.57-0",
+    "@magda/minion-sdk": "^0.0.57-0",
     "@magda/registry-aspects": "^0.0.57-0",
     "@magda/utils": "^0.0.57-0",
     "@types/escape-string-regexp": "^0.0.32",
