@@ -44,7 +44,7 @@ describe("onRecordFound", function(this: Mocha.ISuiteCallbackContext) {
             }
         );
 
-        await onRecordFound(distributionData, registry);
+        await onRecordFound(distributionData, registry as any);
 
         expect(resultAspect).to.include({
             format
@@ -145,7 +145,7 @@ describe("onRecordFound", function(this: Mocha.ISuiteCallbackContext) {
                     }
                 } as any;
 
-                const promise = onRecordFound(input, registry);
+                const promise = onRecordFound(input, registry as any);
 
                 return promise;
             }).timeout(5000);
