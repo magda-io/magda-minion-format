@@ -1,7 +1,7 @@
 {
   "name": "@magda/minion-format",
   "description": "MAGDA Layering Minion",
-  "version": "0.0.57-0",
+  "version": "0.0.58-terria.0",
   "scripts": {
     "prebuild": "rimraf dist tsconfig.tsbuildinfo",
     "build": "yarn run compile",
