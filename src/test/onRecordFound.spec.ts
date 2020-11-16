@@ -115,11 +115,11 @@ describe("onRecordFound", function(this: Mocha.ISuiteCallbackContext) {
 
     describe("Should process soil risk map dataset correctly", function() {
         it("Should process (1st distribution) as `WFS` rather than `ESRI`", () => {
-            return testDistReturnsFormat(soilRiskMap1, "WFS");
+            return testDistReturnsFormat(soilRiskMap1, "ESRI MAPSERVER");
         });
 
         it("Should process (2nd distribution) as `WMS` rather than `ESRI`", () => {
-            return testDistReturnsFormat(soilRiskMap2, "WMS");
+            return testDistReturnsFormat(soilRiskMap2, "ESRI MAPSERVER");
         });
     });
 
