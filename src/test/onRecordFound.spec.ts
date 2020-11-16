@@ -57,11 +57,11 @@ describe("onRecordFound", function(this: Mocha.ISuiteCallbackContext) {
         });
 
         it("Should return `WMS` for distribution no.7", () => {
-            return testDistReturnsFormat(launcestonDist7, "ESRI MAPSERVER");
+            return testDistReturnsFormat(launcestonDist7, "WMS");
         });
 
         it("Should return `WFS` for distribution no.8", () => {
-            return testDistReturnsFormat(launcestonDist8, "ESRI MAPSERVER");
+            return testDistReturnsFormat(launcestonDist8, "WFS");
         });
     });
 
