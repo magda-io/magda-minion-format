@@ -52,16 +52,16 @@ describe("onRecordFound", function(this: Mocha.ISuiteCallbackContext) {
     }
 
     describe("Should process sample launceston dataset data correctly", function() {
-        it("Should return `ESRI REST` for distribution no. 2", () => {
-            return testDistReturnsFormat(launcestonDist2, "ESRI REST");
+        it("Should return `ESRI MAPSERVER` for distribution no. 2", () => {
+            return testDistReturnsFormat(launcestonDist2, "ESRI MAPSERVER");
         });
 
         it("Should return `WMS` for distribution no.7", () => {
-            return testDistReturnsFormat(launcestonDist7, "WMS");
+            return testDistReturnsFormat(launcestonDist7, "ESRI MAPSERVER");
         });
 
         it("Should return `WFS` for distribution no.8", () => {
-            return testDistReturnsFormat(launcestonDist8, "WFS");
+            return testDistReturnsFormat(launcestonDist8, "ESRI MAPSERVER");
         });
     });
 
