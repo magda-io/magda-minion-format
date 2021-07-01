@@ -90,10 +90,42 @@ function getFilteredBracketedFormats(formats: Array<string>) {
     });
 }
 
+/**
+ * Remove a candidate format string if it has no Alphabeta or number char
+ *
+ * @param {string[]} formats
+ */
+const filterNonAlphabetaNumberFormat = (formats: string[]) =>
+    formats.filter(format => format.match(/[a-z0-9]+/i));
+
+/**
+ * resolve some known format here. e.g.
+ * [ 'ZIP', 'FILE', 'GEOTIFF' ] should be considered as "GEOTIFF"
+ * See https://github.com/magda-io/magda-minion-linked-data-rating/issues/4
+ *
+ *
+ * @param {string[]} formats
+ * @return {*}
+ */
+const filterKeepKnownFormat = (formats: string[]) => {
+    if (formats.indexOf("ZIP") !== -1 && formats.indexOf("GEOTIFF") !== -1) {
+        return ["GEOTIFF"];
+    }
+    return formats;
+};
+
 export default function getMeasureResult(
     relatedDistribution: any,
     synonymObject: any
 ): MeasureResult {
+    /**
+     * standardize format string to known / common format
+     *
+     * @param {string[]} formats
+     */
+    const filterCommonFormat = (formats: string[]) =>
+        formats.map(format => getCommonFormat(format, synonymObject));
+
     if (
         !relatedDistribution ||
         !relatedDistribution.aspects ||
@@ -143,7 +175,10 @@ export default function getMeasureResult(
         replaceAmpersandFormats,
         splitWhiteSpaceFormats,
         reduceMimeType,
-        filterBracketedFormats
+        filterBracketedFormats,
+        filterNonAlphabetaNumberFormat,
+        filterCommonFormat,
+        filterKeepKnownFormat
     ];
 
     processedFormats = cleanUpAssemblyChain
@@ -160,7 +195,7 @@ export default function getMeasureResult(
         return {
             formats: processedFormats.map(eachFormat => {
                 return {
-                    format: getCommonFormat(eachFormat, synonymObject),
+                    format: eachFormat,
                     correctConfidenceLevel: 100
                 };
             }),

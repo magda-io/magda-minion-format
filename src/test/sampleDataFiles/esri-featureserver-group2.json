@@ -1,0 +1,50 @@
+{
+    "aspects": {
+        "source": {
+            "id": "nsw-ckan",
+            "name": "data.nsw.gov.au",
+            "type": "ckan-resource",
+            "url": "https://data.nsw.gov.au/data/api/3/action/resource_show?id=63e0bbd3-2dab-4965-af33-dc402dd95f51"
+        },
+        "ckan-resource": {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2020-02-05T10:06:49",
+            "datastore_active": false,
+            "datastore_contains_all_records_of_source_file": false,
+            "format": "ARCGIS REST SERVICE",
+            "hash": "",
+            "id": "63e0bbd3-2dab-4965-af33-dc402dd95f51",
+            "last_modified": null,
+            "metadata_modified": "2021-06-30T14:22:38.854070",
+            "mimetype": null,
+            "mimetype_inner": null,
+            "package_id": "65bd07a8-9a63-4bbf-9bf3-1ee9204802ae",
+            "position": 0,
+            "resource_type": null,
+            "size": null,
+            "state": "active",
+            "url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme/FeatureServer/",
+            "url_type": null
+        },
+        "dcat-distribution-strings": {
+            "downloadURL": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme/FeatureServer/",
+            "format": "ARCGIS REST SERVICE",
+            "issued": "2020-02-05T10:06:49Z",
+            "license": "Creative Commons Attribution",
+            "title": "63e0bbd3-2dab-4965-af33-dc402dd95f51"
+        },
+        "source-link-status": {
+            "httpStatusCode": 200,
+            "status": "active"
+        },
+        "dataset-format": {
+            "confidenceLevel": 33,
+            "format": "ARCGIS"
+        }
+    },
+    "id": "dist-nsw-ckan-63e0bbd3-2dab-4965-af33-dc402dd95f51",
+    "name": "63e0bbd3-2dab-4965-af33-dc402dd95f51",
+    "sourceTag": "eb74ae9c-a301-441b-857b-54d5db622d90",
+    "tenantId": 0
+}

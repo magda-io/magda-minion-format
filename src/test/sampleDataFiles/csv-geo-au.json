@@ -1,0 +1,55 @@
+{
+    "aspects": {
+        "source": {
+            "id": "nsw-ckan",
+            "name": "exmaple.com.au",
+            "type": "ckan-resource",
+            "url": "https://exmaple.com.au/data/api/3/action/resource_show?id=b8b7a7f8-fd13-4f22-b766-767dd9095417"
+        },
+        "ckan-resource": {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2021-06-15T00:12:07.915995",
+            "datastore_active": false,
+            "datastore_contains_all_records_of_source_file": false,
+            "description": "xxxxx",
+            "format": "csv-geo-au",
+            "hash": "",
+            "id": "b8b7a7f8-fd13-4f22-b766-767dd9095417",
+            "last_modified": "2021-06-15T00:12:07.891368",
+            "metadata_modified": "2021-06-15T00:12:08.133726",
+            "mimetype": "text/csv",
+            "mimetype_inner": null,
+            "name": "Australian-towns-sample with geo2.csv-geo-au.csv",
+            "package_id": "91a74fbe-c426-4c5b-8c85-486364c94416",
+            "position": 0,
+            "resource_type": null,
+            "size": 70987,
+            "state": "active",
+            "url": "https://exmaple.com.au/data/dataset/91a74fbe-c426-4c5b-8c85-486364c94416/resource/b8b7a7f8-fd13-4f22-b766-767dd9095417/download/au-towns-sample-with-geo2.csv-geo-au.csv",
+            "url_type": "upload"
+        },
+        "dcat-distribution-strings": {
+            "description": "xxxxx",
+            "downloadURL": "https://exmaple.com.au/data/dataset/91a74fbe-c426-4c5b-8c85-486364c94416/resource/b8b7a7f8-fd13-4f22-b766-767dd9095417/download/au-towns-sample-with-geo2.csv-geo-au.csv",
+            "format": "csv-geo-au",
+            "issued": "2021-06-15T00:12:07Z",
+            "license": "License Not Specified",
+            "mediaType": "text/csv",
+            "modified": "2021-06-15T00:12:07Z",
+            "title": "Australian-towns-sample with geo2.csv-geo-au.csv"
+        },
+        "source-link-status": {
+            "httpStatusCode": 200,
+            "status": "active"
+        },
+        "dataset-format": {
+            "confidenceLevel": 90,
+            "format": "CSV"
+        }
+    },
+    "id": "dist-nsw-ckan-b8b7a7f8-fd13-4f22-b766-767dd9095417",
+    "name": "Australian-towns-sample with geo2.csv-geo-au.csv",
+    "sourceTag": "aae3c868-6e5b-4359-8582-b3d035c89926",
+    "tenantId": 0
+}
