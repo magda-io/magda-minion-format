@@ -40,13 +40,7 @@ describe("onRecordFound", async function(this) {
         registry.putRecordAspect.callsFake(
             (disId: any, aType: any, aspect: any) => {
                 resultAspect = aspect;
-                return Promise.resolve({
-                    id: disId,
-                    tenantId: 0,
-                    name: "test",
-                    sourceTag: "xxxx",
-                    aspects: []
-                });
+                return Promise.resolve({} as any);
             }
         );
 
