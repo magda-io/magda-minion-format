@@ -142,6 +142,11 @@ describe("onRecordFound", async function(this) {
         "ESRI SCENESERVER"
     );
 
+    testDistFileReturnsFormat(
+        "./sampleDataFiles/esri-sceneserver2.json",
+        "ESRI SCENESERVER"
+    );
+
     // we put as ESRI MAPSERVER for now see https://github.com/magda-io/magda-minion-format/issues/8
     testDistFileReturnsFormat(
         "./sampleDataFiles/esri-featureserver-group1.json",
