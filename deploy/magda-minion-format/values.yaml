@@ -20,7 +20,6 @@ image:
 
 defaultImage:
   repository: docker.io/data61
-  tag: 0.0.57-0
   pullPolicy: IfNotPresent
   imagePullSecret: false
 
@@ -29,6 +28,6 @@ defaultAdminUserId: "00000000-0000-4000-8000-000000000000"
 resources:
   requests:
     cpu: 10m
-    memory: 30Mi
+    memory: 50Mi
   limits:
     cpu: 100m

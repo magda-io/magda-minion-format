@@ -5,7 +5,16 @@ const URL_REGEXES: Array<[RegExp, string]> = [
     [new RegExp(".*\\.geojson$", "i"), "GEOJSON"],
     [new RegExp(".*\\?.*service=wms.*", "i"), "WMS"],
     [new RegExp(".*\\?.*service=wfs.*", "i"), "WFS"],
-    [new RegExp("\\W+MapServer\\W*|\\W+FeatureServer\\W*", "i"), "ESRI REST"],
+    [new RegExp("\\W+MapServer\\W*", "i"), "ESRI MAPSERVER"],
+    // ESRI FeatureServer We will set as "ESRI MAPSERVER" for now: https://github.com/magda-io/magda-minion-format/issues/8
+    [
+        new RegExp("(\\W+FeatureServer$)|(\\W+FeatureServer/)", "i"),
+        "ESRI FEATURESERVER"
+    ],
+    [
+        new RegExp("(\\W+SceneServer$)|(\\W+SceneServer/)", "i"),
+        "ESRI SCENESERVER"
+    ], // ESRI SceneServer
     [new RegExp(".*\\.(shp|shz|dbf)(\\.zip)?$", "i"), "SHP"],
     [new RegExp(".*\\.(pdf)(\\.zip)?$", "i"), "PDF"],
     [new RegExp(".*\\.(json)(\\.zip)?$", "i"), "JSON"],

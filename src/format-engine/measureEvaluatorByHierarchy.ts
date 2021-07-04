@@ -43,6 +43,19 @@ export default function getBestMeasureResult(
             ) {
                 finalCandidate = dcatSet;
             }
+
+            // if format get from original metadata is "WMS" or "WFS", we should trust it
+            if (
+                ["WMS", "WFS"].indexOf(dcatFormat) !== -1 &&
+                dcatFormat !== sortedFormat
+            ) {
+                finalCandidate = dcatSet;
+            }
+
+            // if format get from original metadata is "CSV-GEO-AU", we should trust it
+            if (dcatFormat === "CSV-GEO-AU" && dcatFormat !== sortedFormat) {
+                finalCandidate = dcatSet;
+            }
         }
         return {
             format: finalCandidate.measureResult.formats[0],

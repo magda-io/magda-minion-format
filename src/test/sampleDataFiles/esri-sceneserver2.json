@@ -1,0 +1,50 @@
+{
+    "aspects": {
+        "source": {
+            "id": "nsw-ckan",
+            "name": "data.nsw.gov.au",
+            "type": "ckan-resource",
+            "url": "https://data.nsw.gov.au/data/api/3/action/resource_show?id=b8ce96a0-ccd9-41b1-ab57-91585d4ea9c9"
+        },
+        "ckan-resource": {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2021-04-29T11:13:30",
+            "datastore_active": false,
+            "datastore_contains_all_records_of_source_file": false,
+            "format": "ARCGIS REST SERVICE",
+            "hash": "",
+            "id": "b8ce96a0-ccd9-41b1-ab57-91585d4ea9c9",
+            "last_modified": null,
+            "metadata_modified": "2021-06-30T14:22:59.061057",
+            "mimetype": null,
+            "mimetype_inner": null,
+            "package_id": "b63902fd-ed0a-432e-b928-3e70eaac5daa",
+            "position": 0,
+            "resource_type": null,
+            "size": null,
+            "state": "active",
+            "url": "https://portal.spatial.nsw.gov.au/portal/sharing/servers/245813070a2e433ea385b709507643b6/rest/services/Hosted/CAMDEN_3D_STRATA_20210310/SceneServer/99",
+            "url_type": null
+        },
+        "dcat-distribution-strings": {
+            "downloadURL": "https://portal.spatial.nsw.gov.au/portal/sharing/servers/245813070a2e433ea385b709507643b6/rest/services/Hosted/CAMDEN_3D_STRATA_20210310/SceneServer/99",
+            "format": "ARCGIS REST SERVICE",
+            "issued": "2021-04-29T11:13:30Z",
+            "license": "Creative Commons Attribution",
+            "title": "b8ce96a0-ccd9-41b1-ab57-91585d4ea9c9"
+        },
+        "source-link-status": {
+            "httpStatusCode": 200,
+            "status": "active"
+        },
+        "dataset-format": {
+            "confidenceLevel": 33,
+            "format": "ARCGIS"
+        }
+    },
+    "id": "dist-nsw-ckan-b8ce96a0-ccd9-41b1-ab57-91585d4ea9c9",
+    "name": "b8ce96a0-ccd9-41b1-ab57-91585d4ea9c9",
+    "sourceTag": "eb74ae9c-a301-441b-857b-54d5db622d90",
+    "tenantId": 0
+}

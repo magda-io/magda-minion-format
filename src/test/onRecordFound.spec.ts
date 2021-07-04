@@ -30,7 +30,7 @@ import soilRiskMap2 from "./sampleDataFiles/soil-risk-map-2.json";
 
 import { AuthorizedRegistryClient as Registry } from "@magda/minion-sdk";
 
-describe("onRecordFound", function(this: Mocha.ISuiteCallbackContext) {
+describe("onRecordFound", async function(this) {
     async function testDistReturnsFormat(
         distributionData: any,
         format: string
@@ -40,7 +40,7 @@ describe("onRecordFound", function(this: Mocha.ISuiteCallbackContext) {
         registry.putRecordAspect.callsFake(
             (disId: any, aType: any, aspect: any) => {
                 resultAspect = aspect;
-                return new Promise((resolve, reject) => resolve());
+                return Promise.resolve({} as any);
             }
         );
 
@@ -51,9 +51,18 @@ describe("onRecordFound", function(this: Mocha.ISuiteCallbackContext) {
         });
     }
 
+    function testDistFileReturnsFormat(
+        distributionDataFile: string,
+        format: string
+    ) {
+        const data = require(distributionDataFile);
+        it(`Should process "${distributionDataFile}" as "${format}"`, () =>
+            testDistReturnsFormat(data, format));
+    }
+
     describe("Should process sample launceston dataset data correctly", function() {
-        it("Should return `ESRI REST` for distribution no. 2", () => {
-            return testDistReturnsFormat(launcestonDist2, "ESRI REST");
+        it("Should return `ESRI MAPSERVER` for distribution no. 2", () => {
+            return testDistReturnsFormat(launcestonDist2, "ESRI MAPSERVER");
         });
 
         it("Should return `WMS` for distribution no.7", () => {
@@ -123,6 +132,39 @@ describe("onRecordFound", function(this: Mocha.ISuiteCallbackContext) {
         });
     });
 
+    testDistFileReturnsFormat(
+        "./sampleDataFiles/esri-featureserver.json",
+        "ESRI FEATURESERVER"
+    );
+
+    testDistFileReturnsFormat(
+        "./sampleDataFiles/esri-sceneserver.json",
+        "ESRI SCENESERVER"
+    );
+
+    testDistFileReturnsFormat(
+        "./sampleDataFiles/esri-sceneserver2.json",
+        "ESRI SCENESERVER"
+    );
+
+    // we put as ESRI MAPSERVER for now see https://github.com/magda-io/magda-minion-format/issues/8
+    testDistFileReturnsFormat(
+        "./sampleDataFiles/esri-featureserver-group1.json",
+        "ESRI FEATURESERVER"
+    );
+
+    testDistFileReturnsFormat(
+        "./sampleDataFiles/esri-featureserver-group2.json",
+        "ESRI FEATURESERVER"
+    );
+
+    testDistFileReturnsFormat("./sampleDataFiles/GeoTIFF-zip.json", "GEOTIFF");
+
+    testDistFileReturnsFormat(
+        "./sampleDataFiles/csv-geo-au.json",
+        "CSV-GEO-AU"
+    );
+
     /**
      * This test simply takes a bunch of formats that were previously causing the minion to use all its CPU and be
      * killed by a liveness check and ensures that they all are able to execute in less than 5 seconds.
@@ -133,7 +175,7 @@ describe("onRecordFound", function(this: Mocha.ISuiteCallbackContext) {
                 const registry = sinon.createStubInstance(Registry);
                 registry.putRecordAspect.callsFake(
                     (disId: any, aType: any, aspect: any) => {
-                        return new Promise((resolve, reject) => resolve());
+                        return Promise.resolve({} as any);
                     }
                 );
 
