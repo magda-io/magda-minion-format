@@ -8,3 +8,4 @@
 -   Increase default memory to 50mb
 -   Use Chart.version as default image version
 -   Upgrade CI scripts
+-   Make ArcGIS FeatureServer format as FEATURESERVER

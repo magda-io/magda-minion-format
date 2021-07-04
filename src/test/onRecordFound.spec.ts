@@ -134,7 +134,7 @@ describe("onRecordFound", async function(this) {
 
     testDistFileReturnsFormat(
         "./sampleDataFiles/esri-featureserver.json",
-        "ESRI MAPSERVER"
+        "ESRI FEATURESERVER"
     );
 
     testDistFileReturnsFormat(
@@ -150,12 +150,12 @@ describe("onRecordFound", async function(this) {
     // we put as ESRI MAPSERVER for now see https://github.com/magda-io/magda-minion-format/issues/8
     testDistFileReturnsFormat(
         "./sampleDataFiles/esri-featureserver-group1.json",
-        "ESRI MAPSERVER"
+        "ESRI FEATURESERVER"
     );
 
     testDistFileReturnsFormat(
         "./sampleDataFiles/esri-featureserver-group2.json",
-        "ESRI MAPSERVER"
+        "ESRI FEATURESERVER"
     );
 
     testDistFileReturnsFormat("./sampleDataFiles/GeoTIFF-zip.json", "GEOTIFF");

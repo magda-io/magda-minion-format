@@ -9,7 +9,7 @@ const URL_REGEXES: Array<[RegExp, string]> = [
     // ESRI FeatureServer We will set as "ESRI MAPSERVER" for now: https://github.com/magda-io/magda-minion-format/issues/8
     [
         new RegExp("(\\W+FeatureServer$)|(\\W+FeatureServer/)", "i"),
-        "ESRI MAPSERVER"
+        "ESRI FEATURESERVER"
     ],
     [
         new RegExp("(\\W+SceneServer$)|(\\W+SceneServer/)", "i"),
