@@ -6,14 +6,13 @@ const URL_REGEXES: Array<[RegExp, string]> = [
     [new RegExp(".*\\?.*service=wms.*", "i"), "WMS"],
     [new RegExp(".*\\?.*service=wfs.*", "i"), "WFS"],
     [new RegExp("\\W+MapServer\\W*", "i"), "ESRI MAPSERVER"],
-    // ESRI FeatureServer Group We will set as "ESRI MAPSERVER" for now: https://github.com/magda-io/magda-minion-format/issues/8
+    // ESRI FeatureServer We will set as "ESRI MAPSERVER" for now: https://github.com/magda-io/magda-minion-format/issues/8
     [
-        new RegExp("(\\W+FeatureServer)|(\\W+FeatureServer/)$", "i"),
+        new RegExp("(\\W+FeatureServer$)|(\\W+FeatureServer/)", "i"),
         "ESRI MAPSERVER"
     ],
-    [new RegExp("\\W+FeatureServer/d", "i"), "ESRI MAPSERVER"], // ESRI FeatureServer
     [
-        new RegExp("(\\W+SceneServer)|(\\W+SceneServer/)$", "i"),
+        new RegExp("(\\W+SceneServer$)|(\\W+SceneServer/)", "i"),
         "ESRI SCENESERVER"
     ], // ESRI SceneServer
     [new RegExp(".*\\.(shp|shz|dbf)(\\.zip)?$", "i"), "SHP"],
