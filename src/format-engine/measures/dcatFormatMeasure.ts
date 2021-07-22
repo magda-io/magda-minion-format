@@ -187,7 +187,9 @@ export default function getMeasureResult(
                 currentTransformer(accumulation),
             processedFormats
         )
-        .filter(format => format.trim().length > 0);
+        .filter(
+            format => typeof format === "string" && format.trim().length > 0
+        );
 
     if (processedFormats.length < 1) {
         return null;
