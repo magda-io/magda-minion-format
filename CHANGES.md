@@ -2,7 +2,7 @@
 
 # 1.0.1
 
--   #14 Fixed: TypeError: Cannot read property 'trim' of null
+-   #14 Fixed: TypeError: Cannot read property 'trim' of null when processing invalid metadata
 
 # 1.0.0
 
