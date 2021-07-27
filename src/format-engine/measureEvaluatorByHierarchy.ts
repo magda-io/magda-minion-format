@@ -30,16 +30,16 @@ export default function getBestMeasureResult(
             const dcatFormat = ("" + dcatSet.measureResult.formats[0].format)
                 .trim()
                 .toUpperCase();
+
             if (
                 /**
                  * if sortedFormat is `ZIP` & is different from dcatFormat, we should trust dcatFormat
+                 * However, if dcatFormat is "esri", likely a zip resource hosted on esri portal.
+                 * Thus, should keep as ZIP
                  */
-                (sortedFormat === "ZIP" && dcatFormat !== sortedFormat) ||
-                /**
-                 * if sortedFormat is `ESRI REST` & is different from dcatFormat, we should trust dcatFormat
-                 * The Regex for testing `ESRI REST` URL cannot be very specific. Thus, should only be used when DcatFormat not present
-                 */
-                (sortedFormat === "ESRI REST" && dcatFormat !== sortedFormat)
+                sortedFormat === "ZIP" &&
+                dcatFormat !== sortedFormat &&
+                dcatFormat.indexOf("ESRI") === -1
             ) {
                 finalCandidate = dcatSet;
             }

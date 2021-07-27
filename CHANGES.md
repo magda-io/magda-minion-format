@@ -3,6 +3,7 @@
 # 1.0.1
 
 -   #14 Fixed: TypeError: Cannot read property 'trim' of null when processing invalid metadata
+-   #16 Should recognise ZIP or other format file stored on ESRI portal correctly
 
 # 1.0.0
 

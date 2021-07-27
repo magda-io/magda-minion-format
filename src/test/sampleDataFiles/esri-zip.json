@@ -1,0 +1,50 @@
+{
+    "aspects": {
+        "source": {
+            "id": "dga",
+            "name": "data.gov.au",
+            "type": "ckan-resource",
+            "url": "https://data.gov.au/data/api/3/action/resource_show?id=9ba09c88-c7ea-4b6a-8a48-172bae0ad8ef"
+        },
+        "ckan-resource": {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2017-06-13T15:01:46.421325",
+            "datastore_active": false,
+            "description": "Downloadable shape and layer files depicting the total number of EPBC Act listed fish species in each IBRA region across Australia. Data supplied by the Environmental Resources Information Network, Australian Government Department of the Environment and Energy. For further information see: http://www.environment.gov.au/about-us/environmental-information-data/open-data\r\n\r\nMap showing the number of fish species listed as threatened under the EPBC Act in each IBRA region across Australia. Data has been sourced from the Species of Environmental Significance database and IBRA version 7 (Australian Government Department of the Environment and Energy).\r\n\r\nMap prepared by the Department of Environment and Energy in order to produce Figure BIO26 in the Biodiversity theme of the 2016 State of the Environment Report, available at http://www.soe.environment.gov.au",
+            "format": "esri shape and layer files",
+            "hash": "",
+            "id": "9ba09c88-c7ea-4b6a-8a48-172bae0ad8ef",
+            "last_modified": "2017-06-13T05:01:46.220210",
+            "mimetype": null,
+            "mimetype_inner": null,
+            "name": "BIO26 Number of EPBC fish species in each IBRA region",
+            "package_id": "5fdef41b-bbd1-42ed-bbea-7f6db1a4ab26",
+            "position": 2,
+            "resource_type": null,
+            "revision_id": "af166725-3f6c-47a0-b626-fd8eb85dd79a",
+            "size": null,
+            "state": "active",
+            "url": "https://data.gov.au/dataset/5fdef41b-bbd1-42ed-bbea-7f6db1a4ab26/resource/9ba09c88-c7ea-4b6a-8a48-172bae0ad8ef/download/soe2016bio10bio26.zip",
+            "url_type": "upload",
+            "wms_layer": ""
+        },
+        "dcat-distribution-strings": {
+            "description": "Downloadable shape and layer files depicting the total number of EPBC Act listed fish species in each IBRA region across Australia. Data supplied by the Environmental Resources Information Network, Australian Government Department of the Environment and Energy. For further information see: http://www.environment.gov.au/about-us/environmental-information-data/open-data\r\n\r\nMap showing the number of fish species listed as threatened under the EPBC Act in each IBRA region across Australia. Data has been sourced from the Species of Environmental Significance database and IBRA version 7 (Australian Government Department of the Environment and Energy).\r\n\r\nMap prepared by the Department of Environment and Energy in order to produce Figure BIO26 in the Biodiversity theme of the 2016 State of the Environment Report, available at http://www.soe.environment.gov.au",
+            "downloadURL": "https://data.gov.au/dataset/5fdef41b-bbd1-42ed-bbea-7f6db1a4ab26/resource/9ba09c88-c7ea-4b6a-8a48-172bae0ad8ef/download/soe2016bio10bio26.zip",
+            "format": "esri shape and layer files",
+            "issued": "2017-06-13T15:01:46Z",
+            "license": "Creative Commons Attribution 4.0 International",
+            "modified": "2017-06-13T05:01:46Z",
+            "title": "BIO26 Number of EPBC fish species in each IBRA region"
+        },
+        "source-link-status": {
+            "httpStatusCode": 200,
+            "status": "active"
+        }
+    },
+    "id": "dist-dga-9ba09c88-c7ea-4b6a-8a48-172bae0ad8ef",
+    "name": "BIO26 Number of EPBC fish species in each IBRA region",
+    "sourceTag": "a9bb685b-ba6f-470b-8138-4a7b9defb993",
+    "tenantId": 0
+}

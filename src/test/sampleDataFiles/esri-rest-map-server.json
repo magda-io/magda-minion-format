@@ -1,0 +1,27 @@
+{
+    "aspects": {
+        "source": {
+            "id": "dga",
+            "name": "data.gov.au",
+            "type": "ckan-resource",
+            "url": "https://data.gov.au/data/api/3/action/resource_show?id=0ca78178-7482-486f-ae85-9cd97c7c97c9"
+        },
+        "dcat-distribution-strings": {
+            "description": "Map prepared by the Department of Environment and Energy\r\n\r\nSource: Environmental Resources Information Network, Australian Government Department of the Environment and Energy.\r\n",
+            "downloadURL": "http://www.environment.gov.au/mapping/rest/services/digital_soe/soe2016_bio1/MapServer/0",
+            "format": "Esri REST",
+            "issued": "2017-01-24T18:21:45Z",
+            "license": "Creative Commons Attribution 4.0 International",
+            "modified": "2017-01-24T18:20:26Z",
+            "title": "BIO26 Numbers of fish species listed under the EPBC Act 1999 in each IBRA region"
+        },
+        "source-link-status": {
+            "httpStatusCode": 200,
+            "status": "active"
+        }
+    },
+    "id": "dist-dga-0ca78178-7482-486f-ae85-9cd97c7c97c9",
+    "name": "BIO26 Numbers of fish species listed under the EPBC Act 1999 in each IBRA region",
+    "sourceTag": "2184d3f1-3cc4-4aee-8629-d4810172b51e",
+    "tenantId": 0
+}

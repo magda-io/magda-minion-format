@@ -132,6 +132,15 @@ describe("onRecordFound", async function(this) {
         });
     });
 
+    testDistFileReturnsFormat("./sampleDataFiles/esri-zip.json", "ZIP");
+
+    testDistFileReturnsFormat("./sampleDataFiles/esri-pdf.json", "PDF");
+
+    testDistFileReturnsFormat(
+        "./sampleDataFiles/esri-rest-map-server.json",
+        "ESRI MAPSERVER"
+    );
+
     testDistFileReturnsFormat(
         "./sampleDataFiles/esri-featureserver.json",
         "ESRI FEATURESERVER"
