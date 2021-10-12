@@ -34,6 +34,10 @@ helm repo add magda-io https://charts.magda.io
 
 Kubernetes: `>= 1.14.0-0`
 
+| Repository              | Name         | Version       |
+| ----------------------- | ------------ | ------------- |
+| https://charts.magda.io | magda-common | 1.0.0-alpha.4 |
+
 ## Values
 
 | Key                          | Type   | Default                                  | Description |

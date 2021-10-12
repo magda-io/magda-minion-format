@@ -24,7 +24,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@magda/ci-utils": "^1.0.2",
-    "@magda/docker-utils": "^0.0.60-alpha.15",
+    "@magda/docker-utils": "^0.0.60",
     "@types/chai": "^4.2.8",
     "@types/express": "4.17.9",
     "@types/lodash": "^4.14.88",
@@ -44,9 +44,9 @@
     "typescript": "^3.9.5"
   },
   "dependencies": {
-    "@magda/minion-sdk": "^0.0.60-alpha.15",
-    "@magda/registry-aspects": "^0.0.60-alpha.15",
-    "@magda/utils": "^0.0.60-alpha.15",
+    "@magda/minion-sdk": "^0.0.60",
+    "@magda/registry-aspects": "^0.0.60",
+    "@magda/utils": "^0.0.60",
     "@types/escape-string-regexp": "^0.0.32",
     "@types/lodash": "^4.14.88",
     "escape-string-regexp": "^1.0.5",
@@ -62,7 +62,7 @@
       "name": "data61/magda-minion-format",
       "include": "node_modules dist Dockerfile synonyms.json package.json"
     },
-    "jwtSecret": "squirrel",
+    "jwtSecret": "ZJp1yZQPwGU0WZfIydX5q1FMEZNQS2pQLy8xcF1k5ai0P4LWinzCLtGCl1hEPrlhCGeOspZV/JTncM1dPSdsX8UhDvyvsMi6ZmB4+z6dHTdQlnsNHPlMzqLxyzT5IFRVZGjysPkktLAadqq81T/MyQ7iNIbYupVbUza2Q9GN6s8=",
     "userId": "00000000-0000-4000-8000-000000000000"
   },
   "magda": {
