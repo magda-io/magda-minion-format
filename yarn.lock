@@ -32,34 +32,34 @@
     recursive-readdir "^2.2.2"
     yaml "^1.10.2"
 
-"@magda/docker-utils@^0.0.60-alpha.15":
-  version "0.0.60-alpha.15"
-  resolved "https://registry.yarnpkg.com/@magda/docker-utils/-/docker-utils-0.0.60-alpha.15.tgz#23becdca5f58f2d063779e02183bfdcd82e46186"
-  integrity sha512-lZz1SKVmGdG4KPblwy4mfuQL4BDexAlMKa2V6OYKGReSsF5EkyFPRPtYp/Ttkbxsk658RBZR3omp/ruCrzBXhQ==
+"@magda/docker-utils@^0.0.60":
+  version "0.0.60"
+  resolved "https://registry.yarnpkg.com/@magda/docker-utils/-/docker-utils-0.0.60.tgz#7e2002ebdb1472e3206c8e9b8f53730ac298dc33"
+  integrity sha512-jU6mYYeBPkm1cciDOiOqOlSn0Ru5BdhTkpL2qHq3nU+DMLNlgDCHD0sGyCm1iPRaDlo75igO200bFQAR1551pg==
   dependencies:
     fs-extra "^2.1.2"
     is-subdir "^1.0.2"
     lodash "^4.17.5"
     yargs "^12.0.5"
 
-"@magda/minion-sdk@^0.0.60-alpha.15":
-  version "0.0.60-alpha.15"
-  resolved "https://registry.yarnpkg.com/@magda/minion-sdk/-/minion-sdk-0.0.60-alpha.15.tgz#31a62fa4918f98d3ed8aebc834ec4aa734e7b3ce"
-  integrity sha512-ccqvA/NjM9ICWiBWIbteN1kmWvz2aVYRK1ikmO2/N5AuhTqoXJTTwbABc4EoNJLKkBxsxBKLEGU99N0caQIZ1A==
+"@magda/minion-sdk@^0.0.60":
+  version "0.0.60"
+  resolved "https://registry.yarnpkg.com/@magda/minion-sdk/-/minion-sdk-0.0.60.tgz#c8e7294c37ead0ce74fd2fcdd900266feb6ed5f9"
+  integrity sha512-8O8RUYAPRcdZtpnWADfBa841BuEOC1QAV0jPJPTrTa6S2bA9V6ENU4/+li9wDqLUzUkY6fgporoVZ7azC17rkA==
   dependencies:
     "@types/express" "^4.17.6"
     "@types/urijs" "1.19.13"
     "@types/yargs" "^12.0.8"
 
-"@magda/registry-aspects@^0.0.60-alpha.15":
-  version "0.0.60-alpha.15"
-  resolved "https://registry.yarnpkg.com/@magda/registry-aspects/-/registry-aspects-0.0.60-alpha.15.tgz#5fee0e101f0ff8a9834fd164789da87bf1246404"
-  integrity sha512-Y8Zf0yTLrsrLpKyvIM6swJwKVIHuYnFta1q+aOo5ez+kErGjIlMxFOLJO66FnL4dJlL8KY8/H/UxmCoKnYQE5g==
+"@magda/registry-aspects@^0.0.60":
+  version "0.0.60"
+  resolved "https://registry.yarnpkg.com/@magda/registry-aspects/-/registry-aspects-0.0.60.tgz#9fc475c655a89676b05cf9d1a56c3372c5e1f571"
+  integrity sha512-z766I1EdfdbVQc4OJcFb3+xfv3cTBwRwI0PktwsvTX/ybLj4dWNcZKpH01LcIKh/uoZ2jtPfBszScp9LUfGY3g==
 
-"@magda/utils@^0.0.60-alpha.15":
-  version "0.0.60-alpha.15"
-  resolved "https://registry.yarnpkg.com/@magda/utils/-/utils-0.0.60-alpha.15.tgz#e8513e881e79c726ea9868bcffd0b8240df9f775"
-  integrity sha512-m0Mr2AEPdytnQtk+di9dRNtdhOUuho28Px/sowXnHtpvJuhidAgYXOGKR/wXSgnY1eT2kxmQzcAWTQXnZBif9A==
+"@magda/utils@^0.0.60":
+  version "0.0.60"
+  resolved "https://registry.yarnpkg.com/@magda/utils/-/utils-0.0.60.tgz#92d4a3dbe3be60689c68eb25d3880083344ae00c"
+  integrity sha512-tNxxHh4mr/71j9U5hiOpRueRZyl0FsuWQBcBD1egMOS1yK1LPobSMGWaFBdmlKm9jWBHo5JQCIVRFUc7ldCrFQ==
   dependencies:
     "@types/request" "^2.48.1"
 
@@ -1187,9 +1187,9 @@ minimatch@3.0.4, minimatch@^3.0.4:
     brace-expansion "^1.1.7"
 
 minimist@^1.2.0, minimist@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
-  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
+  integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
 mkdirp@0.5.5, mkdirp@^0.5.0:
   version "0.5.5"
