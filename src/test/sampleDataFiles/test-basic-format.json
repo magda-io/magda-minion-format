@@ -1,0 +1,33 @@
+{
+    "aspects": {
+        "ckan-resource": {
+            "created": "2022-07-11T00:01:58.809234",
+            "datastore_active": false,
+            "datastore_contains_all_records_of_source_file": false,
+            "format": "URL",
+            "hash": "",
+            "id": "badb1f67-761f-4cbe-ba2e-5e980a7312ea",
+            "metadata_modified": "2022-07-11T00:01:58.784111",
+            "name": "External Website - Atlas of Living Australia",
+            "package_id": "0c15d0b3-780f-4938-96d9-196654c6e77b",
+            "position": 0,
+            "state": "active",
+            "url": "https://www.ala.org.au/"
+        },
+        "dcat-distribution-strings": {
+            "downloadURL": "https://www.ala.org.au/",
+            "format": "URL",
+            "issued": "2022-07-11T00:01:58Z",
+            "license": "cc-at-4",
+            "title": "External Website - Atlas of Living Australia"
+        },
+        "source": {
+            "id": "nsw",
+            "name": "New South Wales Government",
+            "type": "ckan-resource",
+            "url": "https://data.nsw.gov.au/data/api/3/action/resource_show?id=badb1f67-761f-4cbe-ba2e-5e980a7312ea"
+        }
+    },
+    "id": "dist-nsw-badb1f67-761f-4cbe-ba2e-5e980a7312ea",
+    "name": "External Website - Atlas of Living Australia"
+}
