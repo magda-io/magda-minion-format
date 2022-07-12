@@ -1,5 +1,9 @@
 > The repo was part of [magda main repo](https://github.com/magda-io/magda). For history before v1.0.0, please check [CHANGES.md of main repo](https://github.com/magda-io/magda/blob/master/CHANGES.md).
 
+# 1.1.2
+
+-   allow `crawlerRecordFetchNumber` to be configurable via helm chart
+
 # 1.1.1
 
 -   #20 Fixed incorrect recognise HTML link as audio/BASIC format
