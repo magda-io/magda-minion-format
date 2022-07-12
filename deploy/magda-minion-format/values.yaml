@@ -29,3 +29,7 @@ resources:
     memory: 50Mi
   limits:
     cpu: 100m
+
+# -- During the proactive crawling process, how many events are processed in one batch.
+# You can increase this number when you have more resource to speed up the crawling process
+crawlerRecordFetchNumber: 50

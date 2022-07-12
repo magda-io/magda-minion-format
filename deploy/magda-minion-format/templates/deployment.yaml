@@ -34,6 +34,8 @@ spec:
         env:
         - name: NODE_PORT
           value: "80"
+        - name: CRAWLER_RECORD_FETCH_NUMBER
+          value: {{ .Values.crawlerRecordFetchNumber | default 50 | quote }}
         - name: REGISTRY_URL
           value: "http://registry-api/v0"
         - name: ENABLE_MULTI_TENANTS
