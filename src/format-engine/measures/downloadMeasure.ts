@@ -1,6 +1,8 @@
 import mimeTypes from "mime-types";
 import { getCommonFormat } from "../formats";
 import MeasureResult from "./MeasureResult";
+import urijs from "urijs";
+import path from "path";
 
 /*
  * Tries to determine the format by downloading the downloadURL, and deciphering the MIME type
@@ -22,7 +24,12 @@ export default function getMeasureResult(
         if (!downloadURL || downloadURL === "") return null;
     }
 
-    const rawMime: string | false = mimeTypes.lookup(downloadURL);
+    const downloadUrlPath = urijs(downloadURL ? downloadURL : "").pathname();
+    const extname = path.extname(downloadUrlPath);
+    if (!extname) {
+        return null;
+    }
+    const rawMime: string | false = mimeTypes.lookup(extname);
 
     if (!rawMime) {
         return null;
