@@ -25,9 +25,8 @@ export default async function onRecordFound(
 ) {
     const retrievedEvalSets: MeasureEvaluationSet[] = getEvaluationSets(record);
 
-    const bestFormatResult: MeasureEvalResult = getBestMeasureResult(
-        retrievedEvalSets
-    );
+    const bestFormatResult: MeasureEvalResult =
+        getBestMeasureResult(retrievedEvalSets);
 
     if (
         bestFormatResult &&
@@ -65,6 +64,12 @@ function recordFormatAspect(
 ): Promise<Record> {
     const theTenantId = distribution.tenantId;
     return registry
-        .putRecordAspect(distribution.id, "dataset-format", aspect, theTenantId)
+        .putRecordAspect(
+            distribution.id,
+            "dataset-format",
+            aspect,
+            true,
+            theTenantId
+        )
         .then(unionToThrowable);
 }
