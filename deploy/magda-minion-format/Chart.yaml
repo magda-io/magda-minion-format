@@ -1,7 +1,7 @@
 apiVersion: v2
 name: magda-minion-format
 description: A Helm chart for Magda Format Minion
-version: "1.1.2"
+version: "2.0.0"
 kubeVersion: ">= 1.14.0-0"
 home: "https://github.com/magda-io/magda-minion-format"
 sources: [ "https://github.com/magda-io/magda-minion-format" ]
