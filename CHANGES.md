@@ -1,5 +1,13 @@
 > The repo was part of [magda main repo](https://github.com/magda-io/magda). For history before v1.0.0, please check [CHANGES.md of main repo](https://github.com/magda-io/magda/blob/master/CHANGES.md).
 
+# 2.0.0
+
+- Upgrade to node14
+- Upgrade to typescript 4, webpack 5
+- Added test cases
+- Set webhook config `dereference` = false
+- Release all artifacts to GitHub Container Registry (instead of docker.io & https://charts.magda.io)
+
 # 1.1.2
 
 -   allow `crawlerRecordFetchNumber` to be configurable via helm chart

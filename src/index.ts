@@ -14,11 +14,12 @@ function sleuthLayerer() {
         optionalAspects: [],
         async: false,
         writeAspectDefs: [formatAspectDef],
+        dereference: false,
         onRecordFound
     });
 }
 
-sleuthLayerer().catch(e => {
+sleuthLayerer().catch((e) => {
     console.error("Error:" + e.message, e);
     process.exit(1);
 });

@@ -8,49 +8,40 @@ Other aspects exist that are written to by many minions - for instance, we have 
 
 This magda minion can generate more accurate distribution format information.
 
-### Docker Image
+### Release Registry
 
-Docker image releases can be found from Docker Hub:
+Since v2.0.0, we use [Github Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) as our official Helm Chart & Docker Image release registry.
 
-https://hub.docker.com/r/data61/magda-minion-format/
+It's recommended to deploy minions with as [dependencies](https://helm.sh/docs/topics/chart_best_practices/dependencies/) of a Magda helm deployment.
 
-Development releases (per commit) are also available from [GitHub Registry](https://github.com/magda-io/magda-minion-format/packages) and accessible with access token.
-
-### Helm Chart
-
-It's recommanded to deploy minions with as [dependencies](https://helm.sh/docs/topics/chart_best_practices/dependencies/) of a Magda helm deployment. Example can be found from [here](https://github.com/magda-io/magda-config).
-
--   Magda Helm Charts Repository Url: https://charts.magda.io
-
-The [helm chart](https://helm.sh/docs/topics/charts/) for this minion is auto released when a [Github Release](https://help.github.com/en/github/administering-a-repository/creating-releases) is created for this repo.
-
--   Add repository to helm:
-
-```bash
-helm repo add magda-io https://charts.magda.io
+```yaml
+dependencies:
+  - name: magda-minion-format
+    version: "2.0.0"
+    repository: "oci://ghcr.io/magda-io/charts"
 ```
 
 ## Requirements
 
 Kubernetes: `>= 1.14.0-0`
 
-| Repository              | Name         | Version       |
-| ----------------------- | ------------ | ------------- |
-| https://charts.magda.io | magda-common | 1.0.0-alpha.4 |
+| Repository | Name | Version |
+|------------|------|---------|
+| oci://ghcr.io/magda-io/charts | magda-common | 2.1.1 |
 
 ## Values
 
-| Key                          | Type   | Default                                  | Description                                                                                                                                                                  |
-| ---------------------------- | ------ | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| crawlerRecordFetchNumber     | int    | `50`                                     | During the proactive crawling process, how many events are processed in one batch. You can increase this number when you have more resource to speed up the crawling process |
-| defaultAdminUserId           | string | `"00000000-0000-4000-8000-000000000000"` |                                                                                                                                                                              |
-| defaultImage.imagePullSecret | bool   | `false`                                  |                                                                                                                                                                              |
-| defaultImage.pullPolicy      | string | `"IfNotPresent"`                         |                                                                                                                                                                              |
-| defaultImage.repository      | string | `"docker.io/data61"`                     |                                                                                                                                                                              |
-| global.image                 | object | `{}`                                     |                                                                                                                                                                              |
-| global.minions.image         | object | `{}`                                     |                                                                                                                                                                              |
-| global.rollingUpdate         | object | `{}`                                     |                                                                                                                                                                              |
-| image.name                   | string | `"magda-minion-format"`                  |                                                                                                                                                                              |
-| resources.limits.cpu         | string | `"100m"`                                 |                                                                                                                                                                              |
-| resources.requests.cpu       | string | `"10m"`                                  |                                                                                                                                                                              |
-| resources.requests.memory    | string | `"50Mi"`                                 |                                                                                                                                                                              |
+| Key | Type | Default | Description |
+|-----|------|---------|-------------|
+| crawlerRecordFetchNumber | int | `50` | During the proactive crawling process, how many events are processed in one batch. You can increase this number when you have more resource to speed up the crawling process |
+| defaultAdminUserId | string | `"00000000-0000-4000-8000-000000000000"` |  |
+| defaultImage.imagePullSecret | bool | `false` |  |
+| defaultImage.pullPolicy | string | `"IfNotPresent"` |  |
+| defaultImage.repository | string | `"ghcr.io/magda-io"` |  |
+| global.image | object | `{}` |  |
+| global.minions.image | object | `{}` |  |
+| global.rollingUpdate | object | `{}` |  |
+| image.name | string | `"magda-minion-format"` |  |
+| resources.limits.cpu | string | `"100m"` |  |
+| resources.requests.cpu | string | `"10m"` |  |
+| resources.requests.memory | string | `"50Mi"` |  |
