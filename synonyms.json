@@ -60,5 +60,6 @@
             "type": "as-keyword"
         }
     ],
-    "spss": ["sav"]
+    "spss": ["sav"],
+    "GEOJSON": ["GEO+JSON", "GEOJSON+ZIP", "GEOJSON+ZIP+CSV"]
 }
