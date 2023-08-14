@@ -179,6 +179,11 @@ describe("onRecordFound", async function(this) {
         "HTML"
     );
 
+    testDistFileReturnsFormat(
+        "./sampleDataFiles/issue-23-geojson.json",
+        "GEOJSON"
+    );
+
     /**
      * This test simply takes a bunch of formats that were previously causing the minion to use all its CPU and be
      * killed by a liveness check and ensures that they all are able to execute in less than 5 seconds.
