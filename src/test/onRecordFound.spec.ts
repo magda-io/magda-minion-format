@@ -184,6 +184,16 @@ describe("onRecordFound", async function(this) {
         "GEOJSON"
     );
 
+    // https://github.com/magda-io/magda-minion-format/issues/25
+    // An ArcGIS FeatureServer layer `query` endpoint that returns GeoJSON
+    // (`.../FeatureServer/{id}/query?...&f=geojson`) must be detected as
+    // `GEOJSON`, not `ESRI FEATURESERVER`. The `f=geojson` query parameter is
+    // an unambiguous signal and the URL-substring `FeatureServer` must not win.
+    testDistFileReturnsFormat(
+        "./sampleDataFiles/issue-25-featureserver-query-geojson.json",
+        "GEOJSON"
+    );
+
     /**
      * This test simply takes a bunch of formats that were previously causing the minion to use all its CPU and be
      * killed by a liveness check and ensures that they all are able to execute in less than 5 seconds.

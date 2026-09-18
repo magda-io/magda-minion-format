@@ -1,0 +1,12 @@
+{
+    "aspects": {
+        "dcat-distribution-strings": {
+            "accessURL": "https://services5.arcgis.com/3foZbDxfCo9kcPwP/arcgis/rest/services/AARSC_treecrop_polygon/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson",
+            "format": "GEOJSON",
+            "mediaType": "application/geo+json",
+            "title": "ArcGIS Feature Service (query-only, GeoJSON)"
+        }
+    },
+    "id": "dist-issue-25-featureserver-query-geojson",
+    "name": "ArcGIS Feature Service (query-only, GeoJSON)"
+}
