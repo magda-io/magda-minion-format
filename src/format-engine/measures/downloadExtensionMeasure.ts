@@ -3,6 +3,11 @@ import MeasureResult from "./MeasureResult";
 
 const URL_REGEXES: Array<[RegExp, string]> = [
     [new RegExp(".*\\.geojson$", "i"), "GEOJSON"],
+    // An ArcGIS `query` endpoint that returns GeoJSON (`f=geojson`) is a GeoJSON
+    // data file, not a browsable map service. Detect it before the
+    // MapServer/FeatureServer URL-substring rules below so the unambiguous
+    // `f=geojson` signal wins. https://github.com/magda-io/magda-minion-format/issues/25
+    [new RegExp("[?&]f=geojson(\\b|$)", "i"), "GEOJSON"],
     [new RegExp(".*\\?.*service=wms.*", "i"), "WMS"],
     [new RegExp(".*\\?.*service=wfs.*", "i"), "WFS"],
     [new RegExp("\\W+MapServer\\W*", "i"), "ESRI MAPSERVER"],
