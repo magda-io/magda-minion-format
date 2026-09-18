@@ -3,6 +3,7 @@
 # 2.0.2
 
 - #25 Detect ArcGIS FeatureServer `query` endpoints that return GeoJSON (`f=geojson`) as `GEOJSON` instead of `ESRI FEATURESERVER`
+- Upgrade runtime to Node.js 24 (Docker base image & CI); update `actions/setup-node` to v4
 
 # 2.0.1
 
